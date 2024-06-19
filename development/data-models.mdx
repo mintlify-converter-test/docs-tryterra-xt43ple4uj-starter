@@ -1,0 +1,93 @@
+---
+title: "Getting Started"
+description: "Guide to set up, authenticate, get and parse data"
+---
+Getting Started  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/getting-started.png)
+
+Setting up  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/install-on-backend.png)
+
+Authenticate Users  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/authenticate-users.png)
+
+Getting Data  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/receive-data.png)
+
+Parsing Data  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/understand-our-data.png)
+
+API Settings  
+  
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/customise-terra.png)
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/manage-integrations.png)  
+  
+Mobile Setup
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/api-data-models.png)  
+  
+API
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/widget.png)  
+  
+Widget
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/historical-data.png)  
+  
+Request
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/new-data.png)  
+  
+Receive
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/event-types.png)  
+  
+Events
+
+![](https://terradocs.s3.eu-west-2.amazonaws.com/icons/api-data-models.png)  
+  
+Data Models
+
+## Overview
+
+Our data models are at the core of what makes Terra easy to use; no matter which of our providers you want to connect to, you can expect the same formats and units.
+
+There are eight fundamental data models:
+
+*   [TerraUser](/reference/v2#terrauser)
+     - a Terra User object, equivalent to one wearable connection
+*   [Activity](/reference/v2#activity-1)
+     - workouts performed during a given time period
+*   [Athlete](/reference/v2#athlete)
+     - user identifying information (first name, last name, email etc.)
+*   [Body](/reference/v2#body)
+     - body metrics of the user for a given time period
+*   [Daily](/reference/v2#daily)
+     - summary of the user's daily activity metrics
+*   [Menstruation](/reference/v2#menstruation)
+     - the user's menstruation data for a given time period
+*   [Nutrition](/reference/v2#nutrition)
+     - nutrition data such as micronutrients, macronutrients, and foods consumed
+*   [Sleep](/reference/v2#sleep)
+     - data recorded pertinent to a sleep session for the user
+
+For all data models other than `TerraUser` and `Athlete`, one instance of a data model holds aggregate data over a specific time period (defined by a `start-time` and `end-time`). The individual datapoints collected over the time period is also available in the form of an array of [`Samples`](/reference/v2#samples)
+ .
+
+Data which takes non-numeric, discrete values (e.g. `ActivityType`, `StrokeType`) are modelled as [`Enums`](/reference/enums)
+.
+
+For more in-depth explanations and examples, please refer to the [Data Models](/reference/v2)
+ section.
+
+Did this page help you?
+
+Yes
+
+No
